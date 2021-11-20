@@ -37,3 +37,14 @@ def eje3(texto, posicion, letra):
     return print (texto + "  " + cadena)
 eje3(input("ingrese texto: "), int(input("ingrese posicion: ")), input("ingrese letra: "))
 
+# ejercicio 4
+def eje4(nombre):
+    
+    texto = nombre.split()
+    for i in range(len(texto)):
+        texto[i] = texto[i].capitalize()
+    
+    nombres = ' '.join(texto)    
+    print(nombres)        
+
+eje4(input("Ingrese sus nombres y apellidos: "))
