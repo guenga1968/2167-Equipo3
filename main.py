@@ -48,3 +48,17 @@ def eje4(nombre):
     print(nombres)        
 
 eje4(input("Ingrese sus nombres y apellidos: "))
+
+# ejercicio 5
+
+def eje5():
+    
+    numeros = [2,6,10,10,7,5,6]
+    numero2 = [0]
+    maximo = max(numeros)
+    for i in numeros:
+        if i < maximo:
+            numero2.append(i)
+    maximo2 = max(numero2)
+    print(maximo2)
+eje5()
