@@ -25,3 +25,15 @@ def changeLettersConSwap(string):
     return string.swapcase()
 
 print(changeLettersConSwap(y))
+
+#ejercicio 3
+def eje3(texto, posicion, letra):
+    
+    
+    cadena = list(texto)
+    cadena[int(posicion)] = letra
+    cadena = "".join(cadena)
+
+    return print (texto + "  " + cadena)
+eje3(input("ingrese texto: "), int(input("ingrese posicion: ")), input("ingrese letra: "))
+
