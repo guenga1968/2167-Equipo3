@@ -62,3 +62,16 @@ def eje5():
     maximo2 = max(numero2)
     print(maximo2)
 eje5()
+
+#ejercicio Extra A
+
+def eje6(numero):
+    print(numero)
+   
+    for i in range(1,(int(numero)+1)):
+        
+        if i > 1:
+            for x in range(1,i):
+                print(i,end=" ")
+        print(i)
+eje6(input("Ingrese un numero: "))
