@@ -66,7 +66,6 @@ eje5()
 #ejercicio Extra A
 
 def eje6(numero):
-    print(numero)
    
     for i in range(1,(int(numero)+1)):
         
