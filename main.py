@@ -76,9 +76,37 @@ def eje6(numero):
 eje6(input("Ingrese un numero: "))
 
 
+# CLASES EJERCICIO 1 NUMERO COMPLEJO
+class Numeros:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def __add__(self, other):
+        return Numeros(self.a + other.a, self.b + other.b)
+
+    def __sub__(self, other):
+        return Numeros(self.a - other.a, self.b - other.b)
+
+    def __mul__(self, other):
+        return Numeros(self.a * other.a, self.b * other.b)
+
+    def __truediv__(self, other):
+        return Numeros(self.a / other.a, self.b / other.b)
+
+    def __str__(self):
+        return "Número Complejo:({}-{}) ".format(self.a, self.b)
 
 
-# CLASES EJERCICIO 2
+numero1 = Numeros(2, 3)
+numero2 = Numeros(4, 5)
+print(numero1 + numero2)
+print(numero1 - numero2)
+print(numero1 * numero2)
+print(numero1 / numero2)
+#---------------------------------------------------------------------
+
+# CLASES EJERCICIO 2 VECTORES
 class Vectores:
     def __init__(self, x, y, z):
         self.x = x
