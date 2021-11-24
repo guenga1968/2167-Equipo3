@@ -26,6 +26,39 @@ def changeLettersConSwap(string):
 
 print(changeLettersConSwap(y))
 
+
+#ejercicio 1 escribir una funcion que cambie todos los espacios por guiones.
+
+
+def fraseCambiada():
+
+     frase=input('Ingrese una frase: ')
+
+     fraseCambio= frase.replace(" ","_")
+
+     print("La frase con guion es:", fraseCambio)
+
+fraseCambiada()
+
+#2- Cambiar Mayusculas por Minusculas max 100 caracteres
+
+
+def cambioMayuscula():
+    
+    frase=input('Ingrese una frase: ')
+    if len(frase) <=10:
+        nuevafrase=frase.swapcase()
+        print("La nueva frase es:", nuevafrase)
+    else: 
+        print("La frase debe ser menor o igual a 100 caracteres")
+        
+        
+cambioMayuscula()
+
+
+
+
+
 #ejercicio 3
 def eje3(texto, posicion, letra):
     
@@ -74,6 +107,22 @@ def eje6(numero):
                 print(i,end=" ")
         print(i)
 eje6(input("Ingrese un numero: "))
+
+# Ejercicio 5b Escribir una funcion que reciba un string(el cual representara el nombre de una empresa) 
+#y devuelve por salida estandar(usando print) los 3 caracteres mas usados en un orden descendiente.
+
+def caracteresMasUsados(string):
+    diccionario = {}
+    for i in string:
+        if i in diccionario:
+            diccionario[i] += 1
+        else:
+            diccionario[i] = 1
+   
+    diccionarioNuevo = sorted(diccionario.items(), key=lambda x: x[1], reverse=True)
+    return print(diccionarioNuevo[:3]) 
+    
+caracteresMasUsados(input("Ingrese el nombre de la empresa:"))
 
 
 #---------------------------------------------------------------------------------------------------------------------
