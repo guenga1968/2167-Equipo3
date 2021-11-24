@@ -46,7 +46,7 @@ fraseCambiada()
 def cambioMayuscula():
     
     frase=input('Ingrese una frase: ')
-    if len(frase) <=10:
+    if len(frase) <=100:
         nuevafrase=frase.swapcase()
         print("La nueva frase es:", nuevafrase)
     else: 
