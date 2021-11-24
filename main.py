@@ -76,6 +76,7 @@ def eje6(numero):
 eje6(input("Ingrese un numero: "))
 
 
+#---------------------------------------------------------------------------------------------------------------------
 # CLASES EJERCICIO 1 NUMERO COMPLEJO
 class Numeros:
     def __init__(self, a, b):
